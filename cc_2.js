@@ -21,9 +21,9 @@ let bills = [275,40,430];
 let tip = bills.map(bill => calculateTip(bill));
 let totals = bills.map((bill, index) => bill +tips[index]);
 
-console.log('Bills:', bills);
-console.log('Tips:', tips);
-console.log('Totals:', totals);
+console.log(bills);
+console.log(tips);
+console.log(totals);
 
 //Task 5 - Test Data 
 
