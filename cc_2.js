@@ -14,3 +14,13 @@ function calculateTup(bill) {
 }
 let testbill = 100
 console.log(calculateTip(testBill));
+
+//Task 4 - Utilize Arrays
+
+let bills1 = [275,40,430];
+let tips = bills.map(bill => calculateTip(bill));
+let totals = bills.map((bill, index) => bill +tips[index]);
+
+console.log('Bills:', bills);
+console.log('Tips:', tips);
+console.log('Totals:', totals);
