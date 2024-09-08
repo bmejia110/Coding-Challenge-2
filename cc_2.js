@@ -17,10 +17,24 @@ console.log(calculateTip(testBill));
 
 //Task 4 - Utilize Arrays
 
-let bills1 = [275,40,430];
-let tips = bills.map(bill => calculateTip(bill));
+let bills = [275,40,430];
+let tip = bills.map(bill => calculateTip(bill));
 let totals = bills.map((bill, index) => bill +tips[index]);
 
 console.log('Bills:', bills);
 console.log('Tips:', tips);
 console.log('Totals:', totals);
+
+//Task 5 - Test Data 
+
+let bills1 = [275,40,430];
+let bills2 = [125,555,44];
+
+let tips1 = bills1.map(bill => calculateTip(bill));
+let totals1 = bills1.map((bill, index) => bill +tips1[index]);
+
+let tips2 = bills2.map(bill => calculateTup(bill));
+let totals2 = bills2.map((bill, index)=> bill +tips2[index]);
+
+console.log(bills1, tips1, totals1);
+console.log(bills2, tips2, totals2);
